@@ -1,0 +1,72 @@
+
+#include <Keyboard.h>                             
+                                  
+int pinW = 2;      //fight stick for s                                                                                          f6 modern controlls                                 
+int pinA = 3;
+int pinS = 4;
+int pinD = 5;     
+int pinH = 6;
+int pinJ = 7;
+int pinK = 8;
+int PinL = 9;
+void setup() {
+
+pinMode(pinW, INPUT_PULLUP);                        
+pinMode(pinA, INPUT_PULLUP);                        
+pinMode(pinS, INPUT_PULLUP);
+pinMode(pinD, INPUT_PULLUP);
+pinMode(pinH, INPUT_PULLUP);
+pinMode(pinJ, INPUT_PULLUP);                        
+pinMode(pinK, INPUT_PULLUP);
+pinMode(PinL, INPUT_PULLUP);
+
+}
+
+void loop() {
+
+  if (digitalRead(pinW) == LOW)                     
+  {
+    Keyboard.write('w');                            
+    delay(250);
+  }
+
+  if (digitalRead(pinA) == LOW)                 
+  {
+    Keyboard.write('a');         
+    delay(250);
+  }
+
+ if (digitalRead(pinS) == LOW)                     
+  {
+    Keyboard.write('s');                            
+    delay(250);
+  }
+
+  if (digitalRead(pinD) == LOW)                 
+  {
+    Keyboard.write('d');         
+    delay(250);
+  }
+  if (digitalRead(pinH) == LOW)                     
+  {
+    Keyboard.write('h');                            
+    delay(250);
+  }
+
+  if (digitalRead(pinJ) == LOW)                 
+  {
+    Keyboard.write('j');         
+    delay(250);
+  }
+  if (digitalRead(pinK) == LOW)                     
+  {
+    Keyboard.write('k');                            
+    delay(250);
+  }
+
+  if (digitalRead(pinL) == LOW)                 
+  {
+    Keyboard.write('l');         
+    delay(250);
+  }
+}
